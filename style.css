@@ -1,0 +1,198 @@
+:root {
+    font-size: calc(0.5vw + 1vh);
+    font-family:monospace
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;  
+}
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(234, 244, 253);
+    gap: 10px;       
+}
+fieldset {
+    background-color: rgb(193, 236, 229);
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 500px; 
+    margin: 0 auto; 
+}
+.enterTaskDiv {
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;align-items: center;  
+    background-color: rgb(166, 218, 250);  
+    padding: 20px;  
+    box-shadow: 0px 0px 5px rgba(1, 248, 162, 0.2);   
+    border: 0.2rem solid black;
+    border-radius: 0.2rem;
+}
+
+.columns {
+    display: flex;
+    margin: 1.6rem auto;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+}
+.column1 {
+    width: 15rem;
+    margin: 0 0.6rem;
+    background: #b5abab;
+    border: 0.2rem solid black;
+    border-radius: 0.2rem;
+
+}
+.column2 {
+    width: 15rem;
+    margin: 0 0.6rem;
+    background: #b5abab;
+    border: 0.2rem solid black;
+    border-radius: 0.2rem;
+}
+.column3 {
+    width: 15rem;
+    margin: 0 0.6rem;
+    background: #b5abab;
+    border: #000013 0.2rem solid;
+    border-radius: 0.2rem;
+}
+
+.column4 {
+    width: 15rem;
+    margin: 0 0.6rem;
+    background: #b5abab;
+    border: 0.2rem solid black;
+    border-radius: 0.2rem;
+
+}
+
+ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.addTaskButton{
+    background-color: #cf93d1;
+}
+.addTaskButton:hover{
+    background-color: #f207fa;
+}
+
+#deleteAllButton {
+    background-color: #fd9595;
+}
+#deleteAllButton:hover {
+    background-color: #fe0202;
+}
+h3 {
+    text-align: center;
+}
+.column1TitleDiv {
+    background: hsl(0, 99%, 50%);
+    border: 1px solid
+}
+.column1TitleDiv:hover {
+    background-color: firebrick;
+
+}
+
+.column2TitleDiv {
+    background-color: yellow;
+    border: 1px solid black
+}
+.column2TitleDiv:hover {
+    background-color: rgb(185, 167, 11);
+
+}
+.column3TitleDiv {
+    background-color: rgb(5, 226, 5);
+    border: 1px solid black;
+}
+.column3TitleDiv:hover {
+    background-color: rgb(24, 146, 57);
+
+}
+.highPriorityTaskClass {
+    display: flex;
+    cursor: move;
+    height: 4rem;
+    text-align: center;
+    height: 4rem;
+    width: 7rem;
+}
+.mediumPriorityTaskClass {
+    display: flex;
+    cursor: move;
+    height: 4rem;
+    text-align: center;
+    height: 4rem;
+    width: 7rem;
+}
+.lowPriorityTaskClass {
+    display: flex;
+    cursor: move;
+    height: 4rem;
+    text-align: center;
+    height: 4rem;
+    width: 7rem;
+}
+#highPriorityTaskId1 {
+    border: 1px solid #ad2525; /* Replace #000 with the desired border color */
+    padding: 10px; /* Optional: Add padding for spacing */
+    margin: 5px; /* Optional: Add margin for spacing between tasks */
+}
+.column4TitleDiv {
+    background-color: rgb(21, 198, 204);
+    position: relative;
+    border: 1px solid black;  
+}
+.column4TitleDiv:hover {
+    background-color:  rgb(20, 141, 145);
+
+}
+.textArea {
+    margin-top: 10px;
+    width: 90%;
+    height: 100%;
+    resize: none; /* Prevent resizing */
+    box-sizing: border-box; /* Include padding and border in the size */
+    background-color: #eedeee;
+}
+
+.taskBox {
+    border: 1px solid #000; /* Border for the box */
+    margin-bottom: 10px; /* Margin between tasks */
+    background-color: #eedeee; /* Background color for the box */
+    box-shadow: 2px 2px 4px rgba(11, 199, 242, 0.2); /* Box shadow for a subtle effect */
+    line-height: 1rem;
+    text-align: center;
+    width: 95%;
+    height: 100%;
+    resize: none;
+    padding: 0;
+    margin: 10px 0;
+}
+.taskBox p {
+    margin: 10px 0;
+    padding: 0;
+}
+.deleteButton {
+    background-color: cadetblue;
+}
+.deleteButton:hover {
+    background-color: rgb(32, 231, 238);
+}

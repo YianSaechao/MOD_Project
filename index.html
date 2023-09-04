@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form id="taskForm">
+        <fieldset>
+            <legend style="font-weight: bolder;">Task Information</legend>
+            <div class="enterTaskDiv">
+                <input type="text" name="taskName" id="taskName" required placeholder="Task Name">
+                <select id="priority" name="priority">
+                    <option value="none">Select Priority</option>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+                <label for="dueDate">Due Date</label>
+                <input type="datetime-local" name="dateTime" id="dueDate" required>
+                <input type="text" placeholder="Task Description" id="addNotes">
+                <input type="button" value="Add Task" class="addTaskButton" id="addTaskButtonId">
+            </div>
+
+            <div class="bodyDiv">
+                <ul class="columns">
+                    <li class="column1">
+                        <div class="column1TitleDiv">
+                            <h3>High Priority</h3>
+                        </div>
+                        <ul class="taskList" id="highTaskListId">
+                        </ul>
+                    </li>
+                    <li class="column2">
+                        <div class="column2TitleDiv">
+                            <h3>Medium Priority</h3>
+                        </div>
+                        <ul class="taskList" id="mediumTaskListId">
+                        </ul>
+                    </li>
+                    <li class="column3">
+                        <div class="column3TitleDiv">
+                            <h3>Low Priority</h3>
+                        </div>
+                        <ul class="taskList" id="lowTaskListId">
+                        </ul>
+                    </li>
+                    <li class="column4">
+                        <div class="column4TitleDiv">
+                            <h3>Side Notes</h3>
+                        </div> 
+                        <div>
+                            <textarea class="textArea" name="taskDescription" id="taskDescription" rows="5" cols="30" style="line-height: 1.5;"></textarea>
+                            <input type="button" value="Delete All" id="deleteAllButton">     
+                        </div>     
+                    </li>
+                </ul>
+            </div>
+        </fieldset>     
+    </form>  
+</body>    
+<script src="script.js"></script>
+</html>
